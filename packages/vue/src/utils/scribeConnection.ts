@@ -33,8 +33,7 @@ export function createScribeConnection(
 
   // Determine if we should include timestamps
   const shouldIncludeTimestamps =
-    includeTimestamps ??
-    !!options.onCommittedTranscriptWithTimestamps;
+    includeTimestamps ?? !!options.onCommittedTranscriptWithTimestamps;
 
   const baseConfig = {
     token,
